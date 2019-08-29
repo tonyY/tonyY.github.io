@@ -325,3 +325,13 @@ blockquote {
 .topbar-menu .item a{
     color: #fff !important;
 }
+
+.copyright .cmower {
+	margin-top: 60px;
+    font-weight: bold;
+    color: rgb(255, 104, 39);
+}
+
+.copyright .brief,.copyright .saoma {
+	color: rgb(2, 30, 170);
+}
