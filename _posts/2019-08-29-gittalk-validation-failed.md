@@ -1,7 +1,7 @@
 ---
 layout: post
 category: 其他
-title: gittalk Error: Validation Failed.
+title: gittalk 报错 Error: Validation Failed.
 tagline: by 沉默王二
 tags: 
   - 其他
