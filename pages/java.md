@@ -5,7 +5,7 @@ titlebar: java
 subtitle: <span class="mega-octicon octicon-cloud-download"></span>&nbsp;&nbsp;
      <a href ="https://github.com/qinggee/java">更多 Java 精选课程 ， <font color="#EB9439">点我</font>查看！</a><br/>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     <a href ="http://www.itwanger.com/assets/images/itwanger.jpg">关注公众号：<font color="#00FF00">沉默王二</font>，回复"加群" 进群交流。</a>
+     <a href ="http://www.itwanger.com/assets/images/itwanger.jpg">关注公众号：<font color="#00FF00">沉默王二</font>，回复"Java" 进群交流。</a>
 menu: java
 css: ['blog-page.css']
 permalink: /java
