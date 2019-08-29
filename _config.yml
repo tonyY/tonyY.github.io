@@ -162,17 +162,17 @@ comments_provider: gitalk
 # !!!Important!!! Please modify infos below to yours
 # https://disqus.com
 disqus:
-    username: itwanger
+    username: qing_gee
 # https://imsun.net/posts/gitment-introduction/
 gitment:
-    owner: itwanger
+    owner: qinggee
     repo: blog-comments
     oauth:
         client_id: 11a6f252374ff6224761
         client_secret: 3d1722301d3eb67900cfc3828d137c9ea50c00a7
 # https://github.com/gitalk/gitalk#install
 gitalk:
-    owner: itwanger
+    owner: qinggee
     repo: blog-comments
     clientID: 11a6f252374ff6224761
     clientSecret: 3d1722301d3eb67900cfc3828d137c9ea50c00a7
