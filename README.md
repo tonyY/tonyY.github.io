@@ -9,6 +9,6 @@
 博客主题使用:[Yummy-Jekyll](https://github.com/DONGChuan/Yummy-Jekyll)
 
 
-## 我的微信公众号
+## 微信扫码关注我的微信公众号
 
 ![](http://www.itwanger.com/assets/images/chenmowanger_430.jpg)
