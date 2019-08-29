@@ -1,6 +1,6 @@
 ---
 layout: post
-category: 程序员
+category: java
 title: Java 网络编程：必知必会的 URL 和 URLConnection
 tagline: by 沉默王二
 tags: 

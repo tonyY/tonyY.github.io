@@ -84,6 +84,10 @@ navs:
     label: 前端
     target: _self
 
+  -
+    href: /life.html
+    label: 程序人生
+    target: _self
 
 
   -
