@@ -8,7 +8,7 @@ subtitle: <span class="mega-octicon octicon-cloud-download"></span>&nbsp;&nbsp;
      <a href ="http://www.itwanger.com/assets/images/itwanger.jpg">关注公众号：<font color="#00FF00">沉默王二</font>，回复"前端" 进群交流。</a>
 menu: java
 css: ['blog-page.css']
-permalink: /java
+permalink: /web
 keywords: 前端教程,前端示例,前端学习,前端资源,前端,Bootstrap,JQuery,JavaScript
 ---
 
