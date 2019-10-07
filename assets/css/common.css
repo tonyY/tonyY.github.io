@@ -344,3 +344,9 @@ blockquote {
     border-style: solid;
     border-width: 0px;
 }
+
+.lock {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
