@@ -34,7 +34,7 @@ function getToken() {
 
 
 // 文章所在容器的选择器
-var articleSelector = 'article.post.container';
+var articleSelector = 'article.post.container.need';
 
 // DOM 完全就绪时执行
 $(function() {
