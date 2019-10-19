@@ -32,6 +32,7 @@ JDK 1.8 的官网下载地址：http://www.oracle.com/technetwork/java/javase/do
 1. 安装 JDK 和 JRE， 选择安装目录。
 
 [什么是 JDK](http://www.itwanger.com/java/2019/10/19/java-jdk.html)
+
 [JDK 和 JRE 有什么区别](http://www.itwanger.com/java/2019/10/19/java-jdk-jre.html)
 
 
