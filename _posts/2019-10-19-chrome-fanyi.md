@@ -6,7 +6,7 @@ tagline: by 沉默王二
 tag: it
 ---
 
-对于经常查阅外文资料的朋友来说，谷歌[翻译插件](http://www.cnplugins.com/google/google-translate/)必不可少。但是这次跟大家说的是 Chrome 浏览器自带的网页翻译功能。
+对于经常查阅外文资料的朋友来说，谷歌[翻译插件](http://www.itwanger.com/it/2019/10/19/chrome-fanyi-chajian.html)必不可少。但是这次跟大家说的是 Chrome 浏览器自带的网页翻译功能。
 
 
 <!--more-->
