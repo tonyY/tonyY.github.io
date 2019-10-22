@@ -1,9 +1,9 @@
 ---
 layout: post
-category: it
+category: java
 title: IntelliJ IDEA 激活码
 tagline: by 沉默王二
-tag: it
+tag: java
 ---
 
 IntelliJ IDEA 旗舰版是要付费的，需要激活码，由于比较贵，我就舍不得钱。怎么办呢？

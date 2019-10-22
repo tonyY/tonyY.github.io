@@ -1,9 +1,9 @@
 ---
 layout: post
-category: it
+category: java
 title: 安装 Eclipse
 tagline: by 沉默王二
-tag: it
+tag: java
 ---
 
 建议大家从官网上下载 Eclipse，地址为：
