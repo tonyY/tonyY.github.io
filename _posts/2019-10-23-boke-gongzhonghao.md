@@ -1,10 +1,4 @@
----
-layout: post
-category: life
-title: 牛掰！我是这么把个人博客粉丝转到公众号的
-tagline: by 沉默王二
-tag: life
----
+
 
 ### 01、前言
 
