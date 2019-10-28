@@ -1,4 +1,3 @@
-
 ---
 layout: post
 category: java
@@ -6,6 +5,7 @@ title: 哪些 Java 知识不需要再学了
 tagline: by 沉默王二
 tag: java
 ---
+
 张无忌在学太极拳的时候，他爹的师父张三丰告诫他一定要把之前所学习的武功全部忘掉，忘得越多就会学得越快。
 
 同样的，[自学 Java](http://www.itwanger.com/java.html) 的时候一定要先知道哪些 Java 知识不需要再学了，毕竟技术的更新迭代就好像火箭一样快，Java 的一些知识点早已经过时了。如果不懂得断舍离，那学起来就不免太痛苦了。
