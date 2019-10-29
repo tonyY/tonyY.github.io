@@ -1,7 +1,7 @@
 ---
 layout: post
 category: java
-title: 安装 Eclipse
+title: Windows 环境下安装 Eclipse
 tagline: by 沉默王二
 tag: java
 ---
