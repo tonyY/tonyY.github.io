@@ -299,3 +299,6 @@ Maven 会通过 Surefire 插件，使用 pom.xml 文件中的测试提供者（�
 
 总之，Maven 是一款优秀的构建工具，[Java 项目的开发者](http://www.itwanger.com/)很有必要熟练地掌握它。
 
+
+原文链接：[http://www.itwanger.com/java/2019/10/24/maven-rumen.html](http://www.itwanger.com/java/2019/10/24/maven-rumen.html)
+

@@ -54,5 +54,5 @@ Console 面板下可以看到如下结果：
 ![](http://www.itmind.net/wp-content/uploads/2019/10/936fe8d842c442eb4fb40ee3374d7f48.png)
 
 
-
+原文链接：[http://www.itwanger.com/java/2019/10/22/eclipse-install.html](http://www.itwanger.com/java/2019/10/22/eclipse-install.html)
 

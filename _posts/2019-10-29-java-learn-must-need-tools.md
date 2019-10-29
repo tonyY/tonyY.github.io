@@ -1,7 +1,7 @@
 ---
 layout: post
 category: java
-title: 学习 Java 必备的工具
+title: 学习 Java 需要安装的软件
 tagline: by 沉默王二
 tag: java
 ---

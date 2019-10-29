@@ -21,7 +21,7 @@ JRE 是 `Java Runtime Environment` 的缩写，是 Java 程序的运行环境。
 总结一下，JDK 是 Java 的开发包，包含有 JRE，面向的是开发人员；JRE 仅仅是 Java 的运行时环境，面向的是 Java 程序的使用者；而 JDK 包含了同版本的 JRE，此外还包含有编译器和其它工具。
 
 
-
+原文链接：[http://www.itwanger.com/java/2019/10/19/java-jdk-jre.html](http://www.itwanger.com/java/2019/10/19/java-jdk-jre.html)
 
 
 
