@@ -1,7 +1,7 @@
 ---
 layout: post
 category: java
-title: 精华解读：《Java编程思想》前言篇
+title: Java 的核心目的和并发编程
 tagline: by 沉默王二
 tag: java
 ---
@@ -41,6 +41,13 @@ Bruce Eckel 吐露心声说自己也曾深陷“并发”泥潭，但经过“�
 3）**增加服务器数量**。单机性能总是有极限的，但服务器集群数量可以很庞大。
 
 好了，本篇文章到此就要结束了。我从《Java 编程思想》的前言里读到了以上这些内容，你呢？
+
+-----
+
+上一篇：[对《Java编程思想》读者的一点建议](http://www.itwanger.com/java/2019/10/30/think-java-book-read-jianyi.html)
+
+
+下一篇：[Java 的核心目的和并发编程](http://www.itwanger.com/java/2019/10/30/think-java-book-read-1.html)
 
 
 PS：**微信搜索「沉默王二」公众号，关注后回复关键字「Java 编程思想」即可获取本书的电子版（高清带书签）**。强烈大家购买纸质版，读起来不费眼。
