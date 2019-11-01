@@ -57,7 +57,7 @@ System.out.println("hello world " + args[0]);
 
 改造后的“hello world”程序，在命令行的编译、运行命令如下：
 
-![](http://www.itwanger.com/assets/images/2019/10/java-main-class-1.png)
+![](http://www.itwanger.com/assets/images/2019/11/java-main-class-1.png)
 
 3）`static`表示 main 方法为静态方法；静态方法可通过"类名.方法名"的方式来调用。这句话怎么理解呢？我们来看以下代码：
 

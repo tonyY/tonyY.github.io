@@ -66,17 +66,17 @@ Java 中的继承可以分为单继承、多重继承和不同类继承同一个
 
 1）单继承
 
-![](http://www.itwanger.com/assets/images/2019/10/java-extends-1.png)
+![](http://www.itwanger.com/assets/images/2019/11/java-extends-1.png)
 
 
 2）多重继承
 
 
-![](http://www.itwanger.com/assets/images/2019/10/java-extends-2.png)
+![](http://www.itwanger.com/assets/images/2019/11/java-extends-2.png)
 
 
 3）不同类继承同一个类
 
-![](http://www.itwanger.com/assets/images/2019/10/java-extends-3.png)
+![](http://www.itwanger.com/assets/images/2019/11/java-extends-3.png)
 
 微信搜索「**沉默王二**」公众号，关注后回复「**免费视频**」获取 500G Java 高质量教学视频（已分门别类）。
