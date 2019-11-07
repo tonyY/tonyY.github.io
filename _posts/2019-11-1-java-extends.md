@@ -79,4 +79,8 @@ Java 中的继承可以分为单继承、多重继承和不同类继承同一个
 
 ![](http://www.itwanger.com/assets/images/2019/11/java-extends-3.png)
 
+上一篇：[什么是面向对象编程（OOP）](http://www.itwanger.com/java/2019/11/01/oop.html)
+
+下一篇：[吃人的那些 Java 名词：对象、引用、堆、栈](http://www.itwanger.com/java/2019/11/05/java-eat-human-words.html)
+
 微信搜索「**沉默王二**」公众号，关注后回复「**免费视频**」获取 500G Java 高质量教学视频（已分门别类）。

@@ -28,26 +28,26 @@ Java的多态是什么呢？其实就是一种能力——同一个行为具有�
 ```java
 //子类继承父类
 public class Wangxiaoer extends Wanger {
-public void write() { // 子类覆盖父类方法
-System.out.println("记住仇恨，表明我们要奋发图强的心智");
-}
+	public void write() { // 子类覆盖父类方法
+		System.out.println("记住仇恨，表明我们要奋发图强的心智");
+	}
 
-public static void main(String[] args) {
-// 父类引用指向子类对象
-Wanger[] wangers = { new Wanger(), new Wangxiaoer() };
+	public static void main(String[] args) {
+		// 父类引用指向子类对象
+		Wanger[] wangers = { new Wanger(), new Wangxiaoer() };
 
-for (Wanger wanger : wangers) {
-// 对象是王二的时候输出：勿忘国耻
-// 对象是王小二的时候输出：记住仇恨，表明我们要奋发图强的心智
-wanger.write();
-}
-}
+		for (Wanger wanger : wangers) {
+			// 对象是王二的时候输出：勿忘国耻
+			// 对象是王小二的时候输出：记住仇恨，表明我们要奋发图强的心智
+			wanger.write();
+		}
+	}
 }
 
 class Wanger {
-public void write() {
-System.out.println("勿忘国耻");
-}
+	public void write() {
+		System.out.println("勿忘国耻");
+	}
 }
 ```
 
@@ -62,34 +62,34 @@ System.out.println("勿忘国耻");
 ```java
 //子类继承父类
 public class Wangxiaoer extends Wanger {
-public void write() { // 子类覆盖父类方法
-System.out.println("记住仇恨，表明我们要奋发图强的心智");
-}
+	public void write() { // 子类覆盖父类方法
+		System.out.println("记住仇恨，表明我们要奋发图强的心智");
+	}
+	
+	public void eat() {
+		System.out.println("我不喜欢读书，我就喜欢吃");
+	}
 
-public void eat() {
-System.out.println("我不喜欢读书，我就喜欢吃");
-}
+	public static void main(String[] args) {
+		// 父类引用指向子类对象
+		Wanger[] wangers = { new Wanger(), new Wangxiaoer() };
 
-public static void main(String[] args) {
-// 父类引用指向子类对象
-Wanger[] wangers = { new Wanger(), new Wangxiaoer() };
-
-for (Wanger wanger : wangers) {
-// 对象是王二的时候输出：勿忘国耻
-// 对象是王小二的时候输出：记住仇恨，表明我们要奋发图强的心智
-wanger.write();
-}
-}
+		for (Wanger wanger : wangers) {
+			// 对象是王二的时候输出：勿忘国耻
+			// 对象是王小二的时候输出：记住仇恨，表明我们要奋发图强的心智
+			wanger.write();
+		}
+	}
 }
 
 class Wanger {
-public void write() {
-System.out.println("勿忘国耻");
-}
-
-public void read() {
-System.out.println("每周读一本好书");
-}
+	public void write() {
+		System.out.println("勿忘国耻");
+	}
+	
+	public void read() {
+		System.out.println("每周读一本好书");
+	}
 }
 ```
 
@@ -103,34 +103,34 @@ System.out.println("每周读一本好书");
 
 ```java
 public class Wangxiaosan extends Wangsan {
-private int age = 3;
-public Wangxiaosan(int age) {
-this.age = age;
-System.out.println("王小三的年龄：" + this.age);
-}
-
-public void write() { // 子类覆盖父类方法
-System.out.println("我小三上幼儿园的年龄是：" + this.age);
-}
-
-public static void main(String[] args) {
-new Wangxiaosan(4);
-//        上幼儿园之前
-//        我小三上幼儿园的年龄是：0
-//        上幼儿园之后
-//        王小三的年龄：4
-}
+	private int age = 3;
+	public Wangxiaosan(int age) {
+		this.age = age;
+		System.out.println("王小三的年龄：" + this.age);
+	}
+	
+	public void write() { // 子类覆盖父类方法
+		System.out.println("我小三上幼儿园的年龄是：" + this.age);
+	}
+	
+	public static void main(String[] args) {
+		new Wangxiaosan(4);
+//		上幼儿园之前
+//		我小三上幼儿园的年龄是：0
+//		上幼儿园之后
+//		王小三的年龄：4
+	}
 }
 
 class Wangsan {
-Wangsan () {
-System.out.println("上幼儿园之前");
-write();
-System.out.println("上幼儿园之后");
-}
-public void write() {
-System.out.println("老子上幼儿园的年龄是3岁半");
-}
+	Wangsan () {
+		System.out.println("上幼儿园之前");
+		write();
+		System.out.println("上幼儿园之后");
+	}
+	public void write() {
+		System.out.println("老子上幼儿园的年龄是3岁半");
+	}
 }
 ```
 
@@ -148,32 +148,32 @@ System.out.println("老子上幼儿园的年龄是3岁半");
 
 ```java
 public class Wangxiaosi extends Wangsi {
-public void write() {
-System.out.println("记住仇恨，表明我们要奋发图强的心智");
-}
+	public void write() {
+		System.out.println("记住仇恨，表明我们要奋发图强的心智");
+	}
 
-public void eat() {
-System.out.println("我不喜欢读书，我就喜欢吃");
-}
+	public void eat() {
+		System.out.println("我不喜欢读书，我就喜欢吃");
+	}
 
-public static void main(String[] args) {
-Wangsi[] wangsis = { new Wangsi(), new Wangxiaosi() };
+	public static void main(String[] args) {
+		Wangsi[] wangsis = { new Wangsi(), new Wangxiaosi() };
 
-// wangsis[1]能够向下转型
-((Wangxiaosi) wangsis[1]).write();
-// wangsis[0]不能向下转型
-((Wangxiaosi)wangsis[0]).write();
-}
+		// wangsis[1]能够向下转型
+		((Wangxiaosi) wangsis[1]).write();
+		// wangsis[0]不能向下转型
+		((Wangxiaosi)wangsis[0]).write();
+	}
 }
 
 class Wangsi {
-public void write() {
-System.out.println("勿忘国耻");
-}
+	public void write() {
+		System.out.println("勿忘国耻");
+	}
 
-public void read() {
-System.out.println("每周读一本好书");
-}
+	public void read() {
+		System.out.println("每周读一本好书");
+	}
 }
 ```
 
@@ -185,10 +185,11 @@ chenssy 大佬对多态下了一个非常经典的结论，我们不妨大声的
 
 ***多态就是指程序中定义的引用变量所指向的具体类型和通过该引用变量发出的方法调用在编译时并不确定，而是在程序运行期间才确定；即一个引用变量倒底会指向哪个类的实例对象，该引用变量发出的方法调用到底是哪个类中实现的方法，必须在由程序运行期间才能决定。因为在程序运行时才确定具体的类，这样，不用修改源程序代码，就可以让引用变量绑定到各种不同的类实现上，从而导致该引用调用的具体方法随之改变，即不修改程序代码就可以改变程序运行时所绑定的具体代码，让程序可以选择多个运行状态，这就是多态性。***
 
--------
+----
 
-上一篇：[如何理解 Java 中的继承？](http://www.itwanger.com/java/2019/11/01/java-extends.html)
+上一篇：[害死人的自动递增，不偿命的自动递减](http://www.itwanger.com/java/2019/11/06/java-caozuofu-++.html)
 
-下一篇：[Java 的操作符——“=”号](http://www.itwanger.com/java/2019/11/01/java-extends.html)
+下一篇：[Java代码复用的三种常用方式：继承、组合和代理](http://www.itwanger.com/java/2019/11/06/java-code-fuyong.html)
 
-如果你觉得文章对你有所帮助，也蛮有趣的，就微信搜索“**沉默王二**”关注一下我的公众号。嘘，回复关键字「Java」更有好礼相送哦。
+
+微信搜索「**沉默王二**」公众号，关注后回复「**免费视频**」获取 500G Java 高质量教学视频（已分门别类）。
