@@ -187,9 +187,8 @@ chenssy 大佬对多态下了一个非常经典的结论，我们不妨大声的
 
 ----
 
-上一篇：[害死人的自动递增，不偿命的自动递减](http://www.itwanger.com/java/2019/11/06/java-caozuofu-++.html)
+上一篇：[Java代码复用的三种常用方式：继承、组合和代理](http://www.itwanger.com/java/2019/11/06/java-code-fuyong.html)
 
-下一篇：[Java代码复用的三种常用方式：继承、组合和代理](http://www.itwanger.com/java/2019/11/06/java-code-fuyong.html)
-
+下一篇：[Java 抽象类和接口，看这一篇就够了](http://www.itwanger.com/java/2019/11/06/java-abstract-interface.html)
 
 微信搜索「**沉默王二**」公众号，关注后回复「**免费视频**」获取 500G Java 高质量教学视频（已分门别类）。
