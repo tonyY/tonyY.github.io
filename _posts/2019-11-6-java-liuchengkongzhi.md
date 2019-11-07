@@ -21,6 +21,7 @@ Java 中涉及控制执行流程的关键字有 if-else、while-do-while、for�
 if (布尔表达式) {
 // 语句
 }
+```
 
 或者一个if语句加上一个else语句
 ```java
@@ -126,7 +127,7 @@ switch(condition) {
 
 流程控制语句有没有掌握，把这道斐波那契数列的面试题做出来就能测试出来了。具体代码：
 
-```
+```java
 public class Fibonacci {
     public static void main(String[] args) {
         int start = 1;
