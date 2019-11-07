@@ -342,8 +342,8 @@ public class Demo {
 
 ----
 
-上一篇：[Java 流程控制语句](http://www.itwanger.com/java/2019/11/06/java-liuchengkongzhi.html)
+上一篇：[Java：多态乃幸福本源](http://www.itwanger.com/java/2019/11/06/java-duotai.html)
 
-下一篇：[Java 访问权限控制：public、private、protected](http://www.itwanger.com/java/2019/11/07/java-public-private-protected.html)
+下一篇：[Java内部类真的那么难以理解？](http://www.itwanger.com/java/2019/11/07/java-inner-class.html)
 
 微信搜索「**沉默王二**」公众号，关注后回复「**免费视频**」获取 500G Java 高质量教学视频（已分门别类）。
