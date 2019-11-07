@@ -1,7 +1,7 @@
 ---
 layout: post
 category: java
-title: Java：多态乃幸福本源
+title: Java内部类真的那么难以理解？
 tagline: by 沉默王二
 tag: java
 ---
