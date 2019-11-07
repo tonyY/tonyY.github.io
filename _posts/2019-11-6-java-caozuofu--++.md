@@ -49,7 +49,7 @@ public static void calculate(int p) {
 
 上一篇：[Java 的操作符——“=”号](http://www.itwanger.com/java/2019/11/01/java-extends.html)
 
-下一篇：[Java：多态乃幸福本源](http://www.itwanger.com/java/2019/11/06/java-duotai.html)
+下一篇：[Java 流程控制语句](http://www.itwanger.com/java/2019/11/06/java-liuchengkongzhi.html)
 
 
 如果你觉得文章对你有所帮助，也蛮有趣的，就微信搜索“**沉默王二**”关注一下我的公众号。嘘，回复关键字「Java」更有好礼相送哦。
