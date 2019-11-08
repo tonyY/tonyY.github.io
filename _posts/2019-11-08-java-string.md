@@ -200,8 +200,8 @@ ${item.username.concat('-').concat(item.realname)}
 
 ----
 
-上一篇：[Java：多态乃幸福本源](http://www.itwanger.com/java/2019/11/06/java-duotai.html)
+上一篇：[Java内部类](http://www.itwanger.com/java/2019/11/07/java-inner-class.html)
 
-下一篇：[Java内部类真的那么难以理解？](http://www.itwanger.com/java/2019/11/07/java-inner-class.html)
+下一篇：[Java 数组，看这篇就够了](http://www.itwanger.com/java/2019/11/08/java-array.html)
 
-微信搜索「**沉默王二**」公众号，关注后回复「**免费视频**」获取 500G 高质量教学视频（已分门别类）。
+微信搜索「**沉默王二**」公众号，关注后回复「**免费视频**」获取 500G 高质量教学视频（[已分门别类](https://mp.weixin.qq.com/s/GjkEyPW0vgIvuDLYQkBM0A)）。
