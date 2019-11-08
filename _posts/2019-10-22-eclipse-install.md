@@ -20,18 +20,18 @@ Eclipse 是一款非常有名的跨平台开源集成开发环境（IDE）。是
 
 选择最新版本就好。
 
-![](http://www.itmind.net/wp-content/uploads/2019/10/e8a2b37097c292595fc346aee29e6867.png)
+![](http://www.itwanger.com/assets/images/2019/10/eclipse-install-Windows-1.png)
 
 
 
 下载完成后，直接运行安装文件即可安装 Eclipse。
 
 
-![](http://www.itmind.net/wp-content/uploads/2019/10/92a2c6a1c6ffc468f2dee9cee1a66e72.png)
+![](http://www.itwanger.com/assets/images/2019/10/eclipse-install-Windows-2.png)
 
 完成后启动 Eclipse，新建一个测试类。
 
-![](http://www.itmind.net/wp-content/uploads/2019/10/2f6d28cdc09b633928dc6c2e006b5c89.png)
+![](http://www.itwanger.com/assets/images/2019/10/eclipse-install-Windows-3.png)
 
 测试代码如下：
 
@@ -47,11 +47,11 @@ System.out.println("Hello, Eclipse!");
 
 右键运行该代码：
 
-![](http://www.itmind.net/wp-content/uploads/2019/10/b2117ff5262231910ebfe5457115efe0.png)
+![](http://www.itwanger.com/assets/images/2019/10/eclipse-install-Windows-4.png)
 
 Console 面板下可以看到如下结果：
 
-![](http://www.itmind.net/wp-content/uploads/2019/10/936fe8d842c442eb4fb40ee3374d7f48.png)
+![](http://www.itwanger.com/assets/images/2019/10/eclipse-install-Windows-5.png)
 
 
 原文链接：[http://www.itwanger.com/java/2019/10/22/eclipse-install.html](http://www.itwanger.com/java/2019/10/22/eclipse-install.html)

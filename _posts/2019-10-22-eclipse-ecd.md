@@ -17,7 +17,7 @@ ECD 将 `JD`、`Jad`、`FernFlow`、`CFR`、`Procyon` 与 `Eclipse` 无缝集成
 
 第一步，在 `Eclipse Marketplace` 搜索 jad。
 
-![](http://www.itmind.net/wp-content/uploads/2019/10/757830c94e1963acda41041084dc4f76.png)
+![](http://www.itwanger.com/assets/images/2019/10/eclipse-ecd-1.png)
 
 第二步，点击「Installed」按钮进行安装。安装完成后重启 Eclipse。
 
@@ -25,11 +25,11 @@ ECD 将 `JD`、`Jad`、`FernFlow`、`CFR`、`Procyon` 与 `Eclipse` 无缝集成
 
 设置 ECD 为默认的 class 打开方式，配置→通用→Editors→File Assoclations→*.class→Class Decompiler Viewer，如下图所示。
 
-![](http://www.itmind.net/wp-content/uploads/2019/10/160540f2bbe7864fbe87a239bd354f59.png)
+![](http://www.itwanger.com/assets/images/2019/10/eclipse-ecd-2.png)
 
 当我们查看 Java 源代码的时候就看到解析工具发生了变化，如下图所示。
 
-![](http://www.itmind.net/wp-content/uploads/2019/10/e75b700813570559318504a30dae6242.png)
+![](http://www.itwanger.com/assets/images/2019/10/eclipse-ecd-3.png)
 
 
 原文链接：[http://www.itwanger.com/java/2019/10/22/eclipse-ecd.html](http://www.itwanger.com/java/2019/10/22/eclipse-ecd.html)

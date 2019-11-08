@@ -53,11 +53,11 @@ Maven 采用了约定优先配置的原则，这些原则如下表所示：
 
 3）设置环境变量，主要是 MAVEN_HOME 和 Path。
 
-![](http://www.itmind.net/wp-content/uploads/2019/10/0332e03b3db9ccd197b7e2131dfa77a5.png)
+![](http://www.itwanger.com/assets/images/2019/10/maven-rumen-1.png)
 
 4）打开命令行，输入 `mvn -v` 验证 Maven 是否配置成功。
 
-![](http://www.itmind.net/wp-content/uploads/2019/10/3752f270b2cdeaafac6ad29917ce2e18.png)
+![](http://www.itwanger.com/assets/images/2019/10/maven-rumen-2.png)
 
 5）Maven 的 conf 目录下包含了一个非常重要的文件 settings.xml，一般情况下，我倾向于将该文件复制到 `~/.m2/` 目录下——建议你也这么做。
 
@@ -81,7 +81,7 @@ Maven 采用了约定优先配置的原则，这些原则如下表所示：
 
 6）在 Eclipse 下依次选择菜单 Window → Show View → Other → Maven → Maven Workspace Build，查看镜像是否配置成功（**我习惯了使用 Eclipse，所以请见谅**，不过不管使用哪种集成开发环境，思路和步骤都大差不差）。
 
-![](http://www.itmind.net/wp-content/uploads/2019/10/5bc31219a62507566f7db7b0bfb3df07.png)
+![](http://www.itwanger.com/assets/images/2019/10/maven-rumen-3.png)
 
 ### 03、快速创建 Maven 项目
 
@@ -91,13 +91,13 @@ Maven 采用了约定优先配置的原则，这些原则如下表所示：
 
 2）在接下来选择项目类型的时候，选择 maven-archetype-quickstart，如下图所示。
 
-![](http://www.itmind.net/wp-content/uploads/2019/10/f54ce88b55f1d3ecc56aa997b63727d4.png)
+![](http://www.itwanger.com/assets/images/2019/10/maven-rumen-4.png)
 
 3）然后指定项目参数的时候填写 group id 和 artifact id。
 
 4）项目创建成功后的目录结构图如下图所示。
 
-![](http://www.itmind.net/wp-content/uploads/2019/10/82c49b73f8eafe12b72cb8041fddfc25.png)
+![](http://www.itwanger.com/assets/images/2019/10/maven-rumen-5.png)
 
 Maven 3 默认使用的依然是 JDK 1.5，不过我们可以为其配置更高版本的 JDK，后面会聊到。
 
@@ -193,7 +193,7 @@ http://mvnrepository.com
 
 第三步，进入该版本的主页，只需要左键轻轻地在 「Maven」选项卡内点一下，就已经把该类库的 Maven 依赖信息复制到粘贴板了（不需要「Ctrl+C」，非常的人性化），如下图所示。
 
-![](http://www.itmind.net/wp-content/uploads/2019/10/581406c6d4eac55d6c8169a5b97e15d3.png)
+![](http://www.itwanger.com/assets/images/2019/10/maven-rumen-6.png)
 
 第四步，将类库的依赖信息粘贴到 pom.xml 文件的 `<dependencies>` 节点下，然后按下快捷键「Ctrl+S」保存。紧接着，依次展开 test → Java Resources → Libraries → Maven Dependencies 节点，你可以看到该类库已经悄悄地添加进来了。
 
@@ -263,34 +263,34 @@ PS：如果不知道选哪一种，缺省就对了。
 
 1）清理：`mvn clean`，该命令会删除 target 目录。可以直接在命令行中执行该命令，只需要切换到项目所在的路径下即可。
 
-![](http://www.itmind.net/wp-content/uploads/2019/10/f0f988e164464641242b87874147eab4.png)
+![](http://www.itwanger.com/assets/images/2019/10/maven-rumen-7.png)
 
 2）编译：`mvn complie`，该命令会编译 src/main/java 目录下的源码。同时，Maven 还会处理在 src/main/resources 目录下的资源文件，确保它们作为编译的一部分。
 
-![](http://www.itmind.net/wp-content/uploads/2019/10/f68e1226b5453c8a75d2b72205a713ff.png)
+![](http://www.itwanger.com/assets/images/2019/10/maven-rumen-8.png)
 
 不过，很遗憾的是，执行该命令会报错。该命令给出的提示是，查看 [Help 1] 给出的地址，我尝试了一下，可以将 `mvn complie` 命令替换为 `mvn compiler:compile` 命令执行，结果如下图所示。
 
-![](http://www.itmind.net/wp-content/uploads/2019/10/1d30c8d95ed9188693bd74bdc84c546e.png)
+![](http://www.itwanger.com/assets/images/2019/10/maven-rumen-9.png)
 
 编译后可以在 target 目录下查看字节码文件。
 
 3）测试：`mvn test`，test 命令在运行时，会执行 compile 命令；而之前我们已经执行过一次 compile 命令，为了确保结果的准确性，可以执行 `mvn clean test` 命令确保测试之前没有残余物，结果如下图所示。
 
-![](http://www.itmind.net/wp-content/uploads/2019/10/73dcb8532864bf3d22ff63566d89a9d9.png)
+![](http://www.itwanger.com/assets/images/2019/10/maven-rumen-10.png)
 
 Maven 会通过 Surefire 插件，使用 pom.xml 文件中的测试提供者（通常是 Junit）运行测试。执行 `test` 命令不仅会运行测试，还会产生报告文件，此时 target 目录下的截图如下：
 
-![](http://www.itmind.net/wp-content/uploads/2019/10/90781c32b21e2109fee753720ca91891.png)
+![](http://www.itwanger.com/assets/images/2019/10/maven-rumen-11.png)
 
 
 4）打包：`mvn install`，该命令会按照 pom.xml 文件中 `<packaging>` 指定的方式（本例为 jar）对编译结果打包。同时，还会把打包好的文件放到本地的 Maven 仓库中，以便其他项目把它当做依赖项使用。命令执行结果如下图所示。
 
-![](http://www.itmind.net/wp-content/uploads/2019/10/64ba4b6220a44a2bf6bfaf07053f1b94.png)
+![](http://www.itwanger.com/assets/images/2019/10/maven-rumen-12.png)
 
 查看本地的 Maven 仓库，可以看到刚刚打包好的文件。
 
-![](http://www.itmind.net/wp-content/uploads/2019/10/0f0a30c72a96d3fdca976f7268bc8c09.png)
+![](http://www.itwanger.com/assets/images/2019/10/maven-rumen-13.png)
 
 
 ### 06、最后

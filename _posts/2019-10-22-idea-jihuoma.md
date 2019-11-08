@@ -18,6 +18,6 @@ IntelliJ IDEA 旗舰版是要付费的，需要激活码，由于比较贵，我
 
 于是我就上某宝搜了一下“idea”，真的有很多答案，只要 15 元。
 
-![](http://www.itmind.net/wp-content/uploads/2019/10/8465379fc58f63c53955f7dd9451ab67.png)
+![](http://www.itwanger.com/assets/images/2019/10/idea-jihuoma-1.png)
 
 原文链接：[http://www.itwanger.com/java/2019/10/22/idea-jihuoma.html](http://www.itwanger.com/java/2019/10/22/idea-jihuoma.html)
