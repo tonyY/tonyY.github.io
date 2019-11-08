@@ -1,7 +1,7 @@
 ---
 layout: post
 category: java
-title:羞，Java 字符串拼接竟然有这么多姿势
+title: 羞，Java 字符串拼接竟然有这么多姿势
 tagline: by 沉默王二
 tag: java
 ---
