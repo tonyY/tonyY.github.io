@@ -1,7 +1,7 @@
 ---
 layout: post
 category: java
-title: Java内部类真的那么难以理解？
+title: Java内部类
 tagline: by 沉默王二
 tag: java
 ---
@@ -149,6 +149,6 @@ wanger();
 
 上一篇：[Java代码复用的三种常用方式：继承、组合和代理](http://www.itwanger.com/java/2019/11/06/java-code-fuyong.html)
 
-下一篇：[Java 抽象类和接口，看这一篇就够了](http://www.itwanger.com/java/2019/11/06/java-abstract-interface.html)
+下一篇：[Java String，看这篇就够了](http://www.itwanger.com/java/2019/11/08/java-string.html)
 
 微信搜索「**沉默王二**」公众号，关注后回复「**免费视频**」获取 500G Java 高质量教学视频（已分门别类）。
