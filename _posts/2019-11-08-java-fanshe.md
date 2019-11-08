@@ -6,7 +6,7 @@ tagline: by 沉默王二
 tag: java
 ---
 
-在Java中，并不是所有的类型信息都能在编译阶段明确，有一些类型信息需要在运行时才能确定，这种机制被称为RTTI，英文全称为Run-Time Type Identification，即运行时类型识别，有没有一点“知行合一”的味道？运行时类型识别主要由Class类实现。
+在 Java 中，并不是所有的类型信息都能在编译阶段明确，有一些类型信息需要在运行时才能确定，这种机制被称为 RTTI，英文全称为 `Run-Time Type Identification`，即运行时类型识别，有没有一点“知行合一”的味道？运行时类型识别主要由Class类实现。
 
 
 <!--more-->
@@ -222,19 +222,18 @@ public class JsonUtil {
 
 ### 05、 总结
 
-为了完成这篇文章，我特意和青苗谷的一名技术专家聊了聊，问他了几个很傻逼的问题：“‘运行时’是什么意思？是站在Java虚拟机的角度，还是程序员的角度？”
+为了完成这篇文章，我特意和[沉默王二交流群](https://mp.weixin.qq.com/s/14UMG0_EX1v_o0zo6xI14w)的一名技术专家聊了聊，问他了几个很傻逼的问题：“‘运行时’是什么意思？是站在Java虚拟机的角度，还是程序员的角度？”
 
 他给了我很好的解释和启发，我不由觉得非常的惭愧，作为一名年纪颇长的Java学习者，竟然对理论知识薄弱到令人发指的地步——不知道你是否也有这样的困惑？
 
 但写作的好处就在于此，在向读者解释“Java如何在运行时识别类型信息”的过程中，我的思路逐渐地清晰了起来——这真是一个自我提升的好办法！
 
-
 ----
 
+上一篇：[Java异常处理：给程序罩一层保险](http://www.itwanger.com/java/2019/11/08/java-exception.html)
 
-上一篇：[HashMap，难的不在Map，而在Hash](http://www.itwanger.com/java/2019/11/08/java-hashmap.html)
 
-下一篇：[Java异常处理：给程序罩一层保险](http://www.itwanger.com/java/2019/11/08/java-exception.html)
+下一篇：[Java枚举：小小enum，优雅而干净](http://www.itwanger.com/java/2019/11/09/java-enum.html)
 
 微信搜索「**沉默王二**」公众号，关注后回复「**免费视频**」获取 500G 高质量教学视频（[已分门别类](https://mp.weixin.qq.com/s/GjkEyPW0vgIvuDLYQkBM0A)）。
 
