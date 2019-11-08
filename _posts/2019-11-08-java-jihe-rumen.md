@@ -8,10 +8,10 @@ tag: java
 
 开门见山地说吧，Java 提供了一套完整的集合类（也可以叫做容器类）来管理一组长度可变的对象（也就是集合的元素），其中常见的类型包括 List、Set、Queue 和 Map。从我个人的编程经验来看，List 的实现类 ArrayList 和 Map 的实现类 HashMap 使用频率最高，其它实现类只能望其项背了。
 
-
 <!--more-->
 
-![](http://upload-images.jianshu.io/upload_images/1179389-864b263040ad995c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![](http://www.itwanger.com/assets/images/2019/11/java-jihe-rumen-1.png)
 
 
 
@@ -83,7 +83,7 @@ HashMap 是最常见的 Map 实现，应用非常的广泛；支持 null 键和 
 
 HashMap 的值中还可以存放新的键值对，就像下面的这张示意图。
 
-![](http://upload-images.jianshu.io/upload_images/1179389-67777f9b03603774.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://www.itwanger.com/assets/images/2019/11/java-jihe-rumen-2.png)
 
 
 ### 03、PriorityQueue
@@ -161,8 +161,8 @@ size()	|返回长度
 ----
 
 
-上一篇：[Java代码复用的三种常用方式：继承、组合和代理](http://www.itwanger.com/java/2019/11/06/java-code-fuyong.html)
+上一篇：[Java 数组，看这篇就够了](http://www.itwanger.com/java/2019/11/08/java-array.html)
 
-下一篇：[Java String，看这篇就够了](http://www.itwanger.com/java/2019/11/08/java-string.html)
+下一篇：[HashMap，难的不在Map，而在Hash](http://www.itwanger.com/java/2019/11/08/java-hashmap.html)
 
-微信搜索「**沉默王二**」公众号，关注后回复「**免费视频**」获取 500G Java 高质量教学视频（已分门别类）。
+微信搜索「**沉默王二**」公众号，关注后回复「**免费视频**」获取 500G 高质量教学视频（[已分门别类](https://mp.weixin.qq.com/s/GjkEyPW0vgIvuDLYQkBM0A)）。
