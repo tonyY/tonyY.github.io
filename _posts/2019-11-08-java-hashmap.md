@@ -149,8 +149,8 @@ public HashMap() {
 ----
 
 
-上一篇：[Java String，看这篇就够了](http://www.itwanger.com/java/2019/11/08/java-string.html)
+上一篇：[Java 集合类入门篇](http://www.itwanger.com/java/2019/11/08/java-jihe-rumen.html)
 
-下一篇：[Java 集合类入门篇](http://www.itwanger.com/java/2019/11/08/java-jihe-rumen.html)
+下一篇：[Java泛型的重要目的：别让猫别站在狗队里](http://www.itwanger.com/java/2019/11/08/java-fanxing.html)
 
 微信搜索「**沉默王二**」公众号，关注后回复「**免费视频**」获取 500G 高质量教学视频（[已分门别类](https://mp.weixin.qq.com/s/GjkEyPW0vgIvuDLYQkBM0A)）。

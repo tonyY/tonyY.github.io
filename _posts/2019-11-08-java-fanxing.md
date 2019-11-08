@@ -1,7 +1,7 @@
 ---
 layout: post
 category: java
-title: Java 集合类入门篇
+title: Java泛型的重要目的：别让猫别站在狗队里
 tagline: by 沉默王二
 tag: java
 ---
