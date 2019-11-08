@@ -287,8 +287,8 @@ PECS 原则：
 ----
 
 
-上一篇：[Java 数组，看这篇就够了](http://www.itwanger.com/java/2019/11/08/java-array.html)
+上一篇：[HashMap，难的不在Map，而在Hash](http://www.itwanger.com/java/2019/11/08/java-hashmap.html)
 
-下一篇：[HashMap，难的不在Map，而在Hash](http://www.itwanger.com/java/2019/11/08/java-hashmap.html)
+下一篇：[Java异常处理：给程序罩一层保险](http://www.itwanger.com/java/2019/11/08/java-exception.html)
 
 微信搜索「**沉默王二**」公众号，关注后回复「**免费视频**」获取 500G 高质量教学视频（[已分门别类](https://mp.weixin.qq.com/s/GjkEyPW0vgIvuDLYQkBM0A)）。
