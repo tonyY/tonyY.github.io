@@ -261,10 +261,10 @@ List<City> getCitys();
 
 ----
 
-上一篇：[Java异常处理：给程序罩一层保险](http://www.itwanger.com/java/2019/11/08/java-exception.html)
+上一篇：[Java枚举：小小enum，优雅而干净](http://www.itwanger.com/java/2019/11/09/java-enum.html)
 
 
-下一篇：[Java枚举：小小enum，优雅而干净](http://www.itwanger.com/java/2019/11/09/java-enum.html)
+下一篇：[Java I/O 入门篇](http://www.itwanger.com/java/2019/11/09/java-io.html)
 
 微信搜索「**沉默王二**」公众号，关注后回复「**免费视频**」获取 500G 高质量教学视频（[已分门别类](https://mp.weixin.qq.com/s/GjkEyPW0vgIvuDLYQkBM0A)）。
 

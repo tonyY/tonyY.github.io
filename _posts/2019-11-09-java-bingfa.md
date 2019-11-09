@@ -233,9 +233,9 @@ public static void addCount() {
 
 ----
 
-上一篇：[如果有人再问你 Java 的反射，把这篇文章扔给他](http://www.itwanger.com/java/2019/11/08/java-fanshe.html)
+上一篇：[Java I/O 入门篇](http://www.itwanger.com/java/2019/11/09/java-io.html)
 
-下一篇：[Java注解（Annotation）：请不要小看我！](http://www.itwanger.com/java/2019/11/08/java-annotation.html)
+下一篇：[Java 并发编程(一)：简介](http://www.itwanger.com/java/2019/11/09/java-bingfa-1.html)
 
 微信搜索「**沉默王二**」公众号，关注后回复「**免费视频**」获取 500G 高质量教学视频（[已分门别类](https://mp.weixin.qq.com/s/GjkEyPW0vgIvuDLYQkBM0A)）。
 
