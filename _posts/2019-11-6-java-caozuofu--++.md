@@ -47,7 +47,7 @@ public static void calculate(int p) {
 }
 ```
 
-上一篇：[Java 的操作符——“=”号](http://www.itwanger.com/java/2019/11/01/java-extends.html)
+上一篇：[Java 的操作符——“=”号](http://www.itwanger.com/java/2019/11/06/java-caozuofu-denghao.html)
 
 下一篇：[Java 流程控制语句](http://www.itwanger.com/java/2019/11/06/java-liuchengkongzhi.html)
 

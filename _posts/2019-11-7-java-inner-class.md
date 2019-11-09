@@ -147,7 +147,7 @@ wanger();
 
 ----
 
-上一篇：[Java代码复用的三种常用方式：继承、组合和代理](http://www.itwanger.com/java/2019/11/06/java-code-fuyong.html)
+上一篇：[Java 抽象类和接口，看这一篇就够了](http://www.itwanger.com/java/2019/11/06/java-abstract-interface.html)
 
 下一篇：[Java String，看这篇就够了](http://www.itwanger.com/java/2019/11/08/java-string.html)
 
