@@ -6,12 +6,9 @@ tagline: by 沉默王二
 tag: java
 ---
 
->二哥，究竟什么是面向对象呢？还有，什么是面向过程。今天去面试的时候，面试官让我用面向对象的思想谈一谈这次面试的过程。
-
-<!--more-->
-
 本篇通过一种趣味化的形式来讲述 Java 的[泛型](http://www.itwanger.com/java/2019/11/08/java-fanxing.html)。
 
+<!--more-->
 
 
 ### 00、故事的起源
@@ -513,9 +510,9 @@ public class Collections {
 
 
 
-上一篇：[Java面试官：兄弟，你确定double精度比float低吗？](http://www.itwanger.com/java/2019/11/14/java-double-float.html)
+上一篇：[Java：优雅地处理异常真是一门学问啊！](http://www.itwanger.com/java/2019/11/14/java-exception.html)
 
-下一篇：[再谈 Java 的继承和超类 Object](http://www.itwanger.com/java/2019/11/14/java-extends.html)
+下一篇：[教妹学Java：大有可为的集合](http://www.itwanger.com/java/2019/11/14/java-jihe.html)
 
 
 谢谢大家的阅读，原创不易，喜欢就随手点个赞👍，这将是我最强的写作动力。如果觉得文章对你有点帮助，还挺有趣，就关注一下我的公众号「**沉默王二**」。
