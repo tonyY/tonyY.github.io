@@ -12,7 +12,7 @@ tag: java
 
 本篇通过一种趣味化的形式来讲述 Java 的[泛型](http://www.itwanger.com/java/2019/11/08/java-fanxing.html)。
 
-![](https://upload-images.jianshu.io/upload_images/1179389-476fc24a5f2f7ca2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 ### 00、故事的起源
 
@@ -134,7 +134,8 @@ class Arraylist<E> {
 
 不过，说实话，泛型方法的定义看起来略显晦涩。来一副图吧（注意：方法返回类型和方法参数类型至少需要一个）。
 
-![](https://upload-images.jianshu.io/upload_images/1179389-27c7906eacd9c69c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](http://www.itwanger.com/assets/images/2019/11/java-fanxing-jiaomei-1.png)
+
 
 现在，我们来调用一下泛型方法。
 
