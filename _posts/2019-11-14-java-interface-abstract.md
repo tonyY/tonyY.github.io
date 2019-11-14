@@ -174,4 +174,9 @@ public class CityService {
 
 这篇文章的目的是帮助更多的读者了解和掌握抽象类、接口的特点，以及不同的使用场景。
 
+上一篇：[再谈 Java 的继承和超类 Object](http://www.itwanger.com/java/2019/11/14/java-extends.html)
+
+下一篇：[Java 生成二维码分享海报](http://www.itwanger.com/java/2019/11/14/java-qrcode-poster.html)
+
+
 谢谢大家的阅读，原创不易，喜欢就随手点个赞👍，这将是我最强的写作动力。如果觉得文章对你有点帮助，还挺有趣，就关注一下我的公众号「**沉默王二**」。
