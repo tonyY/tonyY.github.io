@@ -88,6 +88,11 @@ navs:
     href: /life.html
     label: 程序人生
     target: _self
+    
+  -
+    href: /share.html
+    label: 知识库
+    target: _self
 
 
   -
@@ -107,16 +112,6 @@ labels:
   -
     href: /open-source.html
     label: Code  
-    target: _blank
-
-  -
-    href: /gitchat.html
-    label: Chat
-    target: _blank
-
-  -
-    href: /geektime.html
-    label: 极客
     target: _blank
 
 
