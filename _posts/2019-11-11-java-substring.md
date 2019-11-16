@@ -1,7 +1,7 @@
 ---
 lock: need
 layout: post
-category: life
+category: java
 title: 灵魂拷问：Java 的 substring() 是如何工作的？
 tagline: by 沉默王二
 tags: 
