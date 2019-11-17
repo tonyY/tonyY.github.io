@@ -1,8 +1,8 @@
 ---
 layout: post
-category: java
+category: share
 title: @程序员，你真的了解内存吗？
-tagline: by cxuan
+tagline: cxuan
 tag: share
 ---
 
