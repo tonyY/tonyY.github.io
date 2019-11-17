@@ -1,7 +1,7 @@
 ---
 layout: post
 category: share
-title: @程序员，你真的了解内存吗？
+title: 程序员，你真的了解内存吗？
 tagline: by cxuan
 tag: share
 ---
