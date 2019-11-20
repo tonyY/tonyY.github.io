@@ -1,5 +1,4 @@
 ---
-lock: need
 layout: post
 category: life
 title: 大学生活这样过，校招 offer 飞来找

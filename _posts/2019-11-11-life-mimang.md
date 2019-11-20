@@ -1,5 +1,4 @@
 ---
-lock: need
 layout: post
 category: life
 title: 工作半年就迷茫，给你一盏明灯

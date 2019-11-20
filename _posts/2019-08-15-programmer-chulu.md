@@ -1,5 +1,4 @@
 ---
-lock: need
 layout: post
 category: life
 title: 26岁程序员的出路
