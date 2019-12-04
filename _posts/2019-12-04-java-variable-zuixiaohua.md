@@ -1,221 +1,136 @@
 ---
 layout: post
 category: java
-title: Stack Overflow 上 370万浏览量的一个问题：如何比较 Java 的字符串？
+title: 为什么要将局部变量的作用域最小化？
 tagline: by 沉默王二
 tag: java
 ---
 
-在逛 Stack Overflow 的时候，发现了一些访问量像喜马拉雅山一样高的问题，比如说这个：如何比较 Java 的字符串？访问量足足有 370万+，这不得了啊！说明有很多很多的程序员被这个问题困扰过。
+嗨，本篇文章来说说 Java 的一个小细节：为什么要将局部变量的作用域最小化？
 
 <!--more-->
 
-PS：系列文章回顾：《[Stack Overflow 上250万浏览量的一个问题：你对象丢了](https://mp.weixin.qq.com/s/PBqR_uj6dd4xKEX8SUWIYQ)》
+明人不说暗话啊。这篇文章的灵感来源于《Effective Java》，这本书我买了有好长好长一段时间了，书页都已经泛黄，烙下了时间的痕迹，但我仍然还没有把这本书读完。说来惭愧啊。
 
-我们来回顾一下提问者的问题：
+为什么呢？总感觉这本书的中文翻译有点拙劣，读起来烦闷枯燥。明明感觉作者说得非常有道理，但就是提不起半点兴致。
 
->截止到目前为止，我一直使用“==”操作符来比较字符串，直到程序出现了一个 bug，需要使用 `.equals()` 方法来解决。这是为什么呢？“==”操作符和 `.equals()` 方法之间有什么区别呢？
+（说完这句话，总觉得有点对不住这本书的译者，毕竟吐槽容易，分享难啊。）
 
-和提问者相反，在我刚开始学习 Java 的时候，比较字符串一直使用的是 `.equals()` 方法，因为不管是书本还是老师，都告诫我不要直接使用“==”操作符来比较，会出 bug。至于为什么，书本和老师都没有帮我搞清楚。
+为什么要说这些废话呢，因为怕大家觉得这是不值一提的细节，但往往细节决定成败啊。大家不妨换一种比较轻松的心态来读一读。反正我是不怎么喜欢高谈阔论的文章，读完后往往只能感慨一句：“说得不错啊”，但也仅此而已。
 
-那借此机会，我就来梳理一下 Stack Overflow 上的高赞答案，我们来一起学习进步，打怪升级。
-
-- “==”操作符用于比较两个引用（内存中的存放地址）是否相等，它们是否是同一个对象。
-
-- `.equals()` 用于比较两个对象的内容是否相等。
-
-怎么理解这两句话呢？我来举个不恰当又很恰当的例子。
-
-有一对双胞胎，姐姐叫阿丽塔，妹妹叫洛丽塔。我们普通人的眼睛完全无法分辨谁是姐姐谁是妹妹，可她们的妈妈却可以轻而易举地辨认出。
-
-
-![](http://www.itwanger.com/assets/images/2019/12/java-string-compare-2.png)
-
-`.equals()` 就好像我们普通人，看见阿丽塔以为是洛丽塔，看见洛丽塔以为是阿丽塔，看起来一样就觉得她们是同一个人；“==”操作符就好像她们的妈妈，要求更严格，观察更细致，一眼就能分辨出谁是姐姐谁是妹妹。
+好了，来步入正题。
 
 ```java
-String alita = new String("小萝莉");
-String luolita = new String("小萝莉");
+String [] strs = {"洛阳","牡丹","甲天下"};
+List<String> list = Arrays.asList(strs);
 
-System.out.println(alita.equals(luolita)); // true
-System.out.println(alita == luolita); // false
-```
+Iterator<String> iterator = list.iterator();
+while (iterator.hasNext()) {
+    String s = (String) iterator.next();
+    System.out.println(s);
+}
 
-就上面这段代码来说，`.equals()` 输出的结果为 true，而“==”操作符输出的结果为 false——前者没后者要求那么严格。
-
-大家都知道，Java 的所有类都默认地继承着 Object 这个超类，该类有一个名为 `.equals()` 的方法，源码如下所示。
-
-```java
-public boolean equals(Object obj) {
-    return (this == obj);
+list.add("沉默王二");
+Iterator<String> iterator1 = list.iterator();
+while (iterator.hasNext()) {
+    String s = (String) iterator1.next();
+    System.out.println(s);
 }
 ```
 
-可以看得出，Object 类的 `.equals()` 方法默认采用的是“==”操作符进行比较。假如子类没有重写该方法的话，那么“==”操作符和 `.equals()` 方法的功效就完全一样——比较两个对象的内存地址或者对象的引用是否相等。
+大家用“肉眼”看完上面这段代码后，会觉得有问题吗？
 
-但实际情况中，有不少类重写了 `.equals()` 方法，因为比较内存地址太重了，不太符合现实的场景需求。String 类就重写了 `.equals()` 方法，源码如下所示。
+如果不细心的话，好像真的很难发现“复制-粘贴”引发的这个问题：第二个 while 循环的条件中使用了之前的变量 iterator，而不是它应该使用的 iterator1（粘贴后遗漏了变量的修改）。这个问题将会导致代码在运行的时候抛出 `java.lang.UnsupportedOperationException` 的错误。
+
+说句实在话，在敲代码的这十年来，没少复制粘贴，没少因为粘贴后变量没有修改彻底，而导致出现了各种意料之外的 bug。
+
+假如把变量的作用域最小化的话，还真的能够减少这种因为“复制-粘贴”而导致出现的错误。比如说把 while 循环改造成 for 循环。
 
 ```java
-public boolean equals(Object anObject) {
-    if (this == anObject) {
-        return true;
-    }
-    if (anObject instanceof String) {
-        String anotherString = (String)anObject;
-        int n = value.length;
-        if (n == anotherString.value.length) {
-            char v1[] = value;
-            char v2[] = anotherString.value;
-            int i = 0;
-            while (n-- != 0) {
-                if (v1[i] != v2[i])
-                    return false;
-                i++;
-            }
-            return true;
-        }
-    }
-    return false;
+for (Iterator<String> iterator = list.iterator();iterator.hasNext();) {
+    String s = (String) iterator.next();
+    System.out.println(s);
+}
+
+list.add("沉默王二");
+for (Iterator<String> iterator = list.iterator();iterator.hasNext();) {
+    String s = (String) iterator.next();
+    System.out.println(s);
 }
 ```
 
-可以看得出，如果两个字符串对象“==”，那么 `.equals()` 的结果就为 true；否则的话，就比较两个字符串的内容是否相等。
+第二个 for 循环使用了和第一个 for 循环一模一样的代码，连 iterator 这个变量也不需要修改了。
 
-大家应该都知道了，创建字符串对象有两种写法，如下所示。
-
-```java
-String luolita = "小萝莉";
-String alita = new String("小萝莉");
-```
-
-第一种是在字符串常量池（存储在方法区）中创建对象，并将对象的引用赋值给 luolita。第二种是通过 new 关键字在堆中创建对象，并将对象引用赋值给 alita。
-
-PS：字符串作为最基础的数据类型，使用非常频繁，如果每次都通过 new 关键字进行创建，会耗费高昂的时间和空间代价。Java 虚拟机为了提高性能和减少内存开销，就设计了字符串常量池：相同字面量的对象只有一个。
-
-PPS：Java 虚拟机在执行程序的过程中会把内存区域划分为若干个不同的数据区域，如下图所示。
-
-![](http://www.itwanger.com/assets/images/2019/12/java-string-compare-3.png)
-
-
-
-
-
-
-下面我们通过实际代码来看看字符串的比较。
-
-第一种：
+从另一方面来看的话，for 循环比 while 循环更简短，可读性更好。for 循环还有另外一种最常用的写法，示例如下。
 
 ```java
-new String("小萝莉").equals("小萝莉") // --> true 
-```
-
-`.equals()` 比较的是两个字符串对象的内容是否相等，所以结果为 true。
-
-第二种：
-
-```java
-new String("小萝莉") == "小萝莉" // --> false 
-```
-
-“==”操作符左侧的对象存储在堆中，右侧的对象存储在方法区，所以返回 false。
-
-第三种：
-
-```java
-new String("小萝莉") == new String("小萝莉") // --> false 
-```
-
-new 出来的两个对象肯定是不相等的，所以返回 false。
-
-第四种：
-
-```java
-"小萝莉" == "小萝莉" // --> true 
-```
-
-字符串常量池中只会有一个对象，所以返回 true。
-
-```java
-"小萝莉" == "小" + "萝莉" // --> true
-```
-
-由于“小”和“萝莉”都在字符创常量池，所以编译器会将其自动优化为“小萝莉”，所以返回 true。
-
-经过大量实例的分析，我们可以得出如下结论（也是对提问者的回答）：
-
-- 当比较两个字符串对象的内容是否相等时，请使用 `.equals()` 方法。
-
-- 当比较两个字符串对象是否相等时，请使用“==”操作符。
-
-
-当然了，如果要进行两个字符串对象的内容比较，除了 `.equals()` 方法，还有其他可选的方法。
-
-1）`Objects.equals()`
-
-
-`Objects.equals()` 这个静态方法的优势在于不需要在调用之前判空。
-
-```java
-public static boolean equals(Object a, Object b) {
-    return (a == b) || (a != null && a.equals(b));
+for (int i = 0; i < list.size(); i++) {
+    System.out.println(list.get(i));
 }
 ```
 
-如果直接使用 `a.equals(b)`，则需要在调用之前对 a 进行判空，否则可能会抛出空指针 `java.lang.NullPointerException`。
+但这种写法仍有改进的地方，因为从字节码的角度来看，每次循环都要调用一次 `size()` 方法。
 
-```java
-Objects.equals("小萝莉", new String("小" + "萝莉")) // --> true
-Objects.equals(null, new String("小" + "萝莉")); // --> false
-Objects.equals(null, null) // --> true
-
-String a = null;
-a.equals(new String("小" + "萝莉")); // throw exception
+```
+2: iload_1
+3: aload_0
+4: getfield      #4                  // Field list:Ljava/util/List;
+7: invokeinterface #5,  1            // InterfaceMethod java/util/List.size:()I
+12: if_icmpge     40
+15: getstatic     #6                  // Field java/lang/System.out:Ljava/io/PrintStream;
+18: aload_0
+19: getfield      #4                  // Field list:Ljava/util/List;
+22: iload_1
+23: invokeinterface #7,  2            // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+28: checkcast     #8                  // class java/lang/String
+31: invokevirtual #9                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+34: iinc          1, 1
+37: goto          2
+40: return
 ```
 
-2）String 类的 `.contentEquals()`
+`size()` 方法虽然简短，但也有消耗啊。都有什么消耗呢？说几个专业名词大家感受一下，比如说：创建栈帧、调用方法时保护现场、调用方法完毕后恢复现场。
 
-`.contentEquals()` 的优势在于可以将字符串与任何的字符序列（StringBuffer、StringBuilder、String、CharSequence）进行比较。
+（容许我尴尬一下，在写这篇文章之前，我一直用的上面这种 for 循环格式。看来写文章还是能够督促自己进步啊。）
+
+怎么改进呢，看下面这种写法（强烈推荐啊）。
 
 ```java
-public boolean contentEquals(CharSequence cs) {
-    // Argument is a StringBuffer, StringBuilder
-    if (cs instanceof AbstractStringBuilder) {
-        if (cs instanceof StringBuffer) {
-            synchronized(cs) {
-               return nonSyncContentEquals((AbstractStringBuilder)cs);
-            }
-        } else {
-            return nonSyncContentEquals((AbstractStringBuilder)cs);
-        }
-    }
-    // Argument is a String
-    if (cs instanceof String) {
-        return equals(cs);
-    }
-    // Argument is a generic CharSequence
-    char v1[] = value;
-    int n = v1.length;
-    if (n != cs.length()) {
-        return false;
-    }
-    for (int i = 0; i < n; i++) {
-        if (v1[i] != cs.charAt(i)) {
-            return false;
-        }
-    }
-    return true;
+for (int i = 0, n = list.size(); i < n; i++) {
+    System.out.println(list.get(i));
 }
 ```
 
-从源码上可以看得出，如果 cs 是 StringBuffer，该方法还会进行同步，非常的智能化。不过需要注意的是，使用该方法之前，需要确保比较的两个字符串都不为 null，否则将会抛出空指针。
+在 for 循环内部声明两个变量：i 和 n，n 用来保存 i 的极限值，这样就减少了 `size()` 方法的调用次数（仅有一次了）。
 
-再强调一点，`.equals()` 方法在比较的时候需要判 null，而“==”操作符则不需要。
+再来看一段代码。
 
 ```java
-System.out.println( null == null); // --> true
+String pre_name = "沉默";
+String last_name = "王二";
+
+System.out.println(pre_name);
+System.out.println(last_name);
 ```
 
-好了各位读者朋友们，以上就是本文的全部内容了。**能看到这里的都是人才，二哥必须要为你点个赞**👍。如果觉得不过瘾，还想看到更多，可以查看我的[个人博客](http://www.itwanger.com/)。另外呢，给大家一个承诺，我每周都会更新一篇《程序人生》和一篇 Java 技术栈相关的文章，敬请期待。如果你有什么问题需要我的帮助，或者想喷我了，欢迎留言哟。
+上面这段代码看起来挺规整的，没什么问题，对吧？它没有遵守约定——将局部变量的作用域最小化。
 
-养成好习惯！如果觉得这篇文章有点用的话，**求点赞、求关注、求分享、求留言**，这将是我写下去的最强动力！如果大家想要第一时间看到二哥更新的文章，可以扫描下方的二维码，关注我的公众号。我们下篇文章见！
+pre_name 变量的作用域结束的有点晚；last_name 变量的作用域开始的有点早。假如第一个 `System.out.println()` 出错的话，last_name 的声明就变得毫无意义了。
+
+（这只是一个例子，变量的处理方法可能比 `System.out.println()` 复杂得多。）
+
+好的写法应该是下面这样子。
+
+```java
+String pre_name = "沉默";
+System.out.println(pre_name);
+
+String last_name = "王二";
+System.out.println(last_name);
+```
+
+有人可能觉得这不是在吹毛求疵吗？真不是的，**变量就应该是在第一次使用它的时候声明**。否则的话，变量的作用域要么开始的太早，要么结束的太晚。
+
+好了，这篇文章到此就结束了，非常的简短，但讲清楚了“为什么要将局部变量的作用域最小化”。
+
 
