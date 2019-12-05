@@ -104,4 +104,8 @@ tag: java
 
 ---------
 
+[对《Java核心技术卷一》读者的一些建议](http://www.itwanger.com/java/2019/11/14/java-core-advise.html)
+
+[对《Java编程思想》读者的一点建议](http://www.itwanger.com/java/2019/10/30/think-java-book-read-jianyi.html)
+
 温馨提醒：如果你觉得有用，别忘了**点赞收藏**哦。
