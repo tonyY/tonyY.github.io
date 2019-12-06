@@ -108,3 +108,7 @@ tag: java
 [《Java编程思想》](http://www.itwanger.com/java/2019/10/30/think-java-book-read-jianyi.html)
 
 [《Java核心技术卷一》](http://www.itwanger.com/java/2019/11/14/java-core-advise.html)
+
+[《Head First Java》](http://www.itwanger.com/java/2019/12/04/java-head-first-advise.html)
+
+[Effective Java](http://www.itwanger.com/java/2019/12/06/java-effective-advise.html)
