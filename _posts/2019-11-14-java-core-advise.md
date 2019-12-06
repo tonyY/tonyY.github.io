@@ -1,7 +1,7 @@
 ---
 layout: post
 category: java
-title: 对《Java核心技术卷一》读者的一些建议
+title: 推荐给Java程序员的优质书单：《Java核心技术卷一》
 tagline: by 沉默王二
 tag: java
 ---
@@ -27,4 +27,31 @@ tag: java
 
 整体上来讲，《Java核心技术卷一》非常值得一读，广度和深度都恰到好处。强烈推荐。如果你需要电子版，可以关注「沉默王二」公众号，回复「java」关键字即可获取。我更推荐大家购买纸质版，因为纸质书看起来不伤眼。
 
-下一篇：[Java面试官：兄弟，你确定double精度比float低吗？](http://www.itwanger.com/java/2019/11/14/java-double-float.html)
+如果你需要电子版，可以关注「沉默王二」公众号，回复「Java核心技术卷」关键字即可获取。我更推荐大家购买纸质版，因为纸质书看起来不伤眼。
+
+我在读这本书的时候写了 9 篇文章，大家感兴趣的话可以读一读。
+
+[Java面试官：兄弟，你确定double精度比float低吗？](http://www.itwanger.com/java/2019/11/14/java-double-float.html)
+
+[请用面向对象的思想，谈一谈这次面试的过程](http://www.itwanger.com/java/2019/11/14/java-oo-po.html)
+
+[再谈 Java 的继承和超类 Object](http://www.itwanger.com/java/2019/11/14/java-extends.html)
+
+[Java：接口和抽象类，傻傻分不清楚？](http://www.itwanger.com/java/2019/11/14/java-interface-abstract.html)
+
+[Java生成二维码分享海报](http://www.itwanger.com/java/2019/11/14/java-qrcode-poster.html)
+
+[Java：优雅地处理异常真是一门学问啊！](http://www.itwanger.com/java/2019/11/14/java-exception.html)
+
+[教妹学 Java：晦涩难懂的泛型](http://www.itwanger.com/java/2019/11/14/java-fanxing.html)
+
+[教妹学Java：大有可为的集合](http://www.itwanger.com/java/2019/11/14/java-jihe.html)
+
+[教妹学 Java：难以驾驭的多线程](http://www.itwanger.com/java/2019/11/14/java-duoxiancheng.html)
+
+---------
+往期推荐书单：
+
+[《Java编程思想》](http://www.itwanger.com/java/2019/10/30/think-java-book-read-jianyi.html)
+
+[《Head First Java》](http://www.itwanger.com/java/2019/12/04/java-head-first-advise.html)
