@@ -1,7 +1,7 @@
 ---
 layout: post
 category: java
-title: 推荐给Java程序员的优质书单：《Java核心技术卷一》
+title: 推荐给Java程序员的优质书单(二)：《Java核心技术卷一》
 tagline: by 沉默王二
 tag: java
 ---

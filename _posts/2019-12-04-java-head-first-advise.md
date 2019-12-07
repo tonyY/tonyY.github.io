@@ -1,7 +1,7 @@
 ---
 layout: post
 category: java
-title: 推荐给Java程序员的优质书单：《Head First Java》
+title: 推荐给Java程序员的优质书单(三)：《Head First Java》
 tagline: by 沉默王二
 tag: java
 ---
@@ -10,7 +10,7 @@ tag: java
 
 <!--more-->
 
-尽管《Head First Java》也非常的厚，至少比我的脸皮后，但趣味性就要甩前面两本好几条街了。这年头，大家都没时间读枯燥的技术书，尤其是厚的。上一张图大家感受一下《Head First Java》的调皮吧。
+尽管《Head First Java》也非常的厚，至少比我的脸皮厚，但趣味性就要甩前面两本好几条街了。这年头，大家都没时间读枯燥的技术书，尤其是厚的。上一张图大家感受一下《Head First Java》的调皮吧。
 
 ![](http://www.itwanger.com/assets/images/2019/12/java-head-first-advise-1.png)
 
