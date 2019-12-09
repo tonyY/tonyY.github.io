@@ -1,12 +1,12 @@
 ---
 layout: post
 category: java
-title: 限时 1 秒钟给出答案，来来来，听我口令：“Java 如何获取数组和字符串的长度？length 还是 length()？”
+title: 灵魂拷问：Java 如何获取数组和字符串的长度？length 还是 length()？
 tagline: by 沉默王二
 tag: java
 ---
 
-《Java网络编程》全面介绍了如何使用 Java 开发网络程序。网络编程是指编写运行在多个设备（计算机）上的程序，这些设备可以通过网络连接起来。这也是 Java 基础学习完后必须要学习的一大块内容，包括：Internet 底层协议（TCP/IP 和 UDP/IP）、网络输入和输出、DNS 交互、定位、识别和下载网络资源、HTTP 协议（REST、HTTP 头部和 Cookie）、Socket 通信等等。
+限时 1 秒钟给出答案，来来来，听我口令：“Java 如何获取数组和字符串的长度？length 还是 length()？”
 
 <!--more-->
 
