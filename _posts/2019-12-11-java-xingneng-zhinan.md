@@ -1,7 +1,7 @@
 ---
 layout: post
 category: java
-title: 推荐给Java程序员的优质书单(九)：《设计模式之禅》
+title: 推荐给Java程序员的优质书单(八)：《Java性能权威指南》
 tagline: by 沉默王二
 tag: java
 ---
