@@ -9,6 +9,6 @@
 博客主题使用:[Yummy-Jekyll](https://github.com/DONGChuan/Yummy-Jekyll)
 
 
-## 微信扫码关注我的微信公众号
+## 微信搜索「沉默王二」，关注我的微信公众号
 
-![沉默王二，一枚有趣的程序员](http://www.itwanger.com/assets/images/cmower_5.png)
+
