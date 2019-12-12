@@ -11,4 +11,4 @@
 
 ## 微信扫码关注我的微信公众号
 
-![](http://www.itwanger.com/assets/images/chenmowanger_430.jpg)
+![](http://www.itwanger.com/assets/images/cmower_1.png)
