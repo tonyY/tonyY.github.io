@@ -11,4 +11,4 @@
 
 ## 微信扫码关注我的微信公众号
 
-![](http://www.itwanger.com/assets/images/cmower_1.png)
+![沉默王二，一枚有趣的程序员](http://www.itwanger.com/assets/images/cmower_6.png)
