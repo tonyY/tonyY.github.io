@@ -9,7 +9,7 @@ tags:
 
 老读者都知道的，我在三线小镇洛阳工作。公司很小，开发人员最多的时候也就十来个，最少的时候也就我一个光杆司令。由于掌握着公司所有的核心代码，所以我一直很嚣张。老板也拿我没办法，有时候为了追加一个功能，还得看我脸色。而我呢，经常甩给老板的一句话就是：“这个需求技术上无法实现。”
 
-![](http://www.itwanger.com/assets/assets/images/2019/12/programmer-jishu-wufa-shixian-1.png)
+![](http://www.itwanger.com/assets/images/2019/12/programmer-jishu-wufa-shixian-1.png)
 
 <!--more-->
 
@@ -23,7 +23,7 @@ tags:
 
 举个例子，自我批评一下。前几天我在某园上更新了一篇技术文，题目叫做《[Stack Overflow 上 370万浏览量的一个问题：如何比较 Java 的字符串？](https://mp.weixin.qq.com/s/WyrRCUlelzOxyfVBrxAGUg)》，我觉得写得蛮有趣的，蛮深入的。结果呢，被喷了，截图羞辱一下自己。
 
-![](http://www.itwanger.com/assets/assets/images/2019/12/programmer-jishu-wufa-shixian-2.png)
+![](http://www.itwanger.com/assets/images/2019/12/programmer-jishu-wufa-shixian-2.png)
 
 由于技术很渣的原因，有时候老板提出来的需求就会令我束手无措。记得有一次，他想做一个“二维码海报分享”的功能：用户点击“我的海报”，后台获取用户的微信昵称和头像后，根据自定义的海报模板，生成用户专属的二维码海报。
 
