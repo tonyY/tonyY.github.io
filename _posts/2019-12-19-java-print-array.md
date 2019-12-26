@@ -182,7 +182,7 @@ b.append(']');
 如果需要打印多维码数组的话，`Arrays.toString()` 就无能为力了。
 
 ```java
-String[][] deepArray = new String[][] {{"沉默", "王二"}, {"一枚有趣的程序员"}};
+String[][] deepArray = new String[][] { {"沉默", "王二"}, {"一枚有趣的程序员"} };
 System.out.println(Arrays.toString(deepArray));
 ```
 
@@ -195,7 +195,7 @@ System.out.println(Arrays.toString(deepArray));
 不不不，这不是我们期望的结果，怎么办呢？使用  `Arrays.deepToString()`，专为多维数组而生。
 
 ```java
-String[][] deepArray = new String[][] {{"沉默", "王二"}, {"一枚有趣的程序员"}};
+String[][] deepArray = new String[][] { {"沉默", "王二"}, {"一枚有趣的程序员"} };
 System.out.println(Arrays.deepToString(deepArray));
 ```
 
