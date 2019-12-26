@@ -1,9 +1,9 @@
 ---
 layout: post
-category: java
-title: 灵魂拷问：Java如何获取数组和字符串的长度？
-tagline: by 沉默王二
-tag: java
+category:  java
+title:  灵魂拷问：Java如何获取数组和字符串的长度？
+tagline: by  沉默王二
+tag:  java
 ---
 
 限时 1 秒钟给出答案，来来来，听我口令：“Java 如何获取数组和字符串的长度？length 还是 length()？”
