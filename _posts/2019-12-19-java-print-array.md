@@ -22,14 +22,14 @@ tag: java
 
 很好奇，是不是，为什么不能直接使用 `System.out.println()` 等系列方法来打印数组？来看这样一个例子。
 
-```
+```java
 String [] cmowers = {"沉默","王二","一枚有趣的程序员"};
 System.out.println(cmowers);
 ```
 
 程序打印的结果是：
 
-```
+```java
 [Ljava.lang.String;@3d075dc0
 ```
 
@@ -83,7 +83,7 @@ Arrays.stream(cmowers).forEach(System.out::println);
 
 打印的结果如下所示。
 
-```
+```java
 沉默
 王二
 一枚有趣的程序员
@@ -128,7 +128,7 @@ System.out.println(Arrays.toString(cmowers));
 
 程序打印结果：
 
-```
+```java
 [沉默, 王二, 一枚有趣的程序员]
 ```
 
@@ -188,7 +188,7 @@ System.out.println(Arrays.toString(deepArray));
 
 打印结果如下所示。
 
-```
+```java
 [[Ljava.lang.String;@7ba4f24f, [Ljava.lang.String;@3b9a45b3]
 ```
 
@@ -201,7 +201,7 @@ System.out.println(Arrays.deepToString(deepArray));
 
 打印结果如下所示。
 
-```
+```java
 [[沉默, 王二], [一枚有趣的程序员]]
 ```
 
