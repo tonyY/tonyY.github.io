@@ -6,7 +6,9 @@ tagline: by  沉默王二
 tag:  java
 ---
 
+
 限时 1 秒钟给出答案，来来来，听我口令：“Java 如何获取数组和字符串的长度？length 还是 length()？”
+
 
 <!--more-->
 
@@ -89,14 +91,14 @@ public final class String
 那为什么字符串 String 类会有 `length()` 方法呢？来看一下源码就明白了。
 
 ```java
-    /**
-     * Returns the length of this string.
-     * The length is equal to the number of Unicode
-     * code units in the string.
-     */
-    public int length() {
-        return value.length;
-    }
+/**
+* Returns the length of this string.
+* The length is equal to the number of Unicode
+* code units in the string.
+*/
+public int length() {
+return value.length;
+}
 ```
 
 `length()` 方法返回的正是字符数组 value 的长度（length），value 本身是 private 的，因此很有必要为 String 类提供一个 public 级别的方法来供外部访问字符的长度。
