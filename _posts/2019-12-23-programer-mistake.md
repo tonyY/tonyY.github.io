@@ -84,8 +84,10 @@ tags:
 好了各位读者朋友们，以上就是本文的全部内容了。**能看到这里的都是最优秀的程序员，二哥必须要伸出大拇指为你点个赞**👍。如果觉得不过瘾，还想看到更多，我再给大家推荐几篇。
 
 [程序员的遮羞布：这个需求技术上无法实现](https://mp.weixin.qq.com/s/vGc273Mk13OX6uPGqFmClA)
-[@程序员，别再迷恋多线程工作了](https://mp.weixin.qq.com/s/5BxReAzjZVqPR6ja58X9gQ)
-[@程序员，请掌握这些核心生存技能](https://mp.weixin.qq.com/s/LJtNmmu9u1cLDeInK9Vp9w)
+
+[程序员，别再迷恋多线程工作了](https://mp.weixin.qq.com/s/5BxReAzjZVqPR6ja58X9gQ)
+
+[程序员，请掌握这些核心生存技能](https://mp.weixin.qq.com/s/LJtNmmu9u1cLDeInK9Vp9w)
 
 日常操作来了！如果觉得这篇文章有点用的话，**求在看、求转发**，明人不说暗话，我喜欢这种被大家伙宠爱的感觉。
 
