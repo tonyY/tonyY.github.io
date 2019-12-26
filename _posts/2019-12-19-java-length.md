@@ -1,7 +1,7 @@
 ---
 layout: post
 category: java
-title: 205K+程序员关注过的问题：为什么不应该使用Java的原始类型？
+title: 五分钟学 Java：如何获取数组和字符串的长度？length 还是 length()？
 tagline: by 沉默王二
 tag: java
 ---
