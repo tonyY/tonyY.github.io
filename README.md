@@ -6,6 +6,6 @@
 
 ## 微信搜索「沉默王二」，关注我的微信公众号
 
-![](http://www.itwanger.com/assets/images/cmower_4.png)
+![](http://www.itwanger.com/assets/images/cmower_7.png)
 
 回复【666】更有 500G 高质量教学视频视频相送。
