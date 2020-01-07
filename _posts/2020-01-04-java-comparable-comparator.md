@@ -6,14 +6,13 @@ tagline: by 沉默王二
 tag: java
 ---
 
-大家好，我是鸭血粉丝，周末在逛 programcreek 的时候，我发现了一些专注细节但价值连城的主题。比如说：Java 的 Comparable 和 Comparator 是兄弟俩吗？像这类灵魂拷问的主题，非常值得深入地研究一下。
+大家好，我是沉默王二，周末在逛 programcreek 的时候，我发现了一些专注细节但价值连城的主题。比如说：Java 的 Comparable 和 Comparator 是兄弟俩吗？像这类灵魂拷问的主题，非常值得深入地研究一下。
 
 <!--more-->
 
 
-![](http://www.itwanger.com/assets/images/2020/01/java-comparable-comparator-01.png)
+![](http://www.itwanger.com/assets/images/2020/01/java-comparable-cmoparator-01.png)
 
-另外，[我](https://mp.weixin.qq.com/s/feoOINGSyivBO8Z1gaQVOA)想要告诉大家的是，我越来越喜欢这个系列的文章了，不知道大家有没有同样的感觉？假如有的话，那我就太荣幸了。总之，写的越多，我越发现，散落在海滩上的一颗颗珍珠被我重新捡了起来。
 
 Comparable 和 Comparator 是 Java 的两个接口，从名字上我们就能够读出来它们俩的相似性：以某种方式来比较两个对象。但它们之间到底有什么区别呢？请随我来，打怪进阶喽！
 
@@ -176,4 +175,6 @@ for (Cmower c : list) {
 
 好了，各位读者朋友们，以上就是本文的全部内容了。**能看到这里的都是最胖的程序员（不，最棒），升职加薪就是你了**👍。如果觉得不过瘾，还想看到更多，可以 star 小鸭的 GitHub【[itwanger.github.io](https://github.com/qinggee/itwanger.github.io)】，本文已收录。
 
-原创不易，如果觉得有点用的话，请不要吝啬你手中**点赞**的权力——这将是我最强的写作动力；如果想要在 2020 年快速进阶为一名 Java 大神，请扫描下方的二维码，加入【Java 极客技术】知识星球，和小鸭一起燥起来。
+原创不易，如果觉得有点用的话，请不要吝啬你手中**点赞**的权力——这将是我最强的写作动力。
+
+![](http://www.itwanger.com/assets/images/cmower_6.png)
