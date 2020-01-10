@@ -2,7 +2,7 @@
 layout: page
 title: 你的程序人生和我一样吗
 titlebar: life
-subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 微信搜索“沉默王二”，关注后回复“乔布斯”进群交流
+subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 微信搜索“兔子托尼啊”，关注后回复“乔布斯”进群交流
 menu: life
 css: ['blog-page.css']
 permalink: /life

@@ -1,11 +1,11 @@
-这里是沉默王二的个人博客，里面记录了生活和技术的点点滴滴。
+这里是【兔子托尼啊】的个人博客，里面记录了生活和技术的点点滴滴。
 
 
-访问地址：[http://www.itwanger.com/](http://www.itwanger.com/)
+访问地址：[https://tonyy.github.io/](http://www.itwanger.com/)
 
 
-## 微信搜索「沉默王二」，关注我的微信公众号
+## 微信搜索「兔子托尼啊」，关注我的微信公众号
 
-![](http://www.itwanger.com/assets/images/cmower_7.png)
+![](https://tonyy.github.io/assets/images/qrcode.jpg)
 
-回复【666】更有 500G 高质量教学视频视频相送。
+回复【111】【222】更有大量免费视频和数据相送。
