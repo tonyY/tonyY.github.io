@@ -18,7 +18,7 @@ favicon: favicon.ico
 repository: qinggee/tonyy.github.io
 github_url: https://github.com/tonyy
 url: https://tonyy.github.io/
-#enforce_ssl: itwanger.com
+#enforce_ssl: https://tonyy.github.io
 
 ## Gem
 plugins:
