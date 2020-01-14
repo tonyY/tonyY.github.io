@@ -20,8 +20,9 @@ tag: java
 
 ```CopyOnWrite```看字面意思大概就可以明白了,copy集合之后再进行write操作，我们也称这个为**写时复制**容器。
 
-这个从 JDK 1.5版本就已经有了，Java并发包中有两个实现这个机制的容器，分别是
-```CopyOnWriteArrayList```和```CopyOnWriteArraySet```。
+
+这个从 JDK 1.5版本就已经有了，Java并发包中有两个实现这个机制的容器，分别是```CopyOnWriteArrayList```和```CopyOnWriteArraySet```。
+
 
 CopyOnWrite这个容器非常有用，特别是在并发的时候能够提升效率，很多并发的的场景中都可以用到```CopyOnWrite```的容器，我们在生产环境也用到过，今天托尼就和大家顺便讲讲这个容器。
 
@@ -55,6 +56,7 @@ public class CopyOnWriteArrayList<E>
 
 代码分享：
 -  add 方法
+
 ```java
 public boolean add(E e) {
      //加锁操作
@@ -75,22 +77,23 @@ public boolean add(E e) {
         lock.unlock();
     }
 }
-
 ```
 
 大家要注意上面的代码中```ReentrantLock```，在添加新元素的时候有加锁操作，多线程的情况下防止产生脏数据。
 
 - get方法
+
 ```
 public E get(int index) {
     return get(getArray(), index);
 }
 ```
 
- 读的时候不会加锁，写的时候会加上锁，这个时候如果多线程正好写数据，读取的时候还是会读取到旧的数据。
- -  set方法
+读的时候不会加锁，写的时候会加上锁，这个时候如果多线程正好写数据，读取的时候还是会读取到旧的数据。
+
+-  set方法
  
- ```java
+```java
  public E set(int index, E element) {
     //加锁
     final ReentrantLock lock = this.lock;
@@ -120,6 +123,7 @@ public E get(int index) {
     }
 }
 ```
+
 - remove方法
 
 ```java
@@ -146,14 +150,12 @@ public E remove(int index) {
         lock.unlock();  
     }  
 }  
-
 ```
 
 同样也很简单，都是使用 System.arraycopy、Arrays.copyOf移动元素进行元素的删除操作。
 
 
-
-  - CopyOnWriteArrayList迭代
+- CopyOnWriteArrayList迭代
   
   
   
@@ -188,6 +190,7 @@ public void add(E e) {
 }
 
 ```
+
 举个例子
 
 ```java
@@ -213,16 +216,17 @@ Exception in thread "main" java.lang.UnsupportedOperationException
 从上面的代码我们可以看出来了，适用于多读少写的场景，比如电商的商品列表，添加新商品和读取商品就可以用，其他场景小伙伴们可以想想看。
 
 ### CopyOnWriteArrayList有什么优缺点
-  
- 缺点：
- 
- 1、***内存占用***，因为**写时复制**的原理，所以在添加新元素的时候会复制一份，此刻内存中就会有两份对象，比如这个时候有200M，你在复制一份400M，那么此刻会产生频繁的JVM的Yong GC和Full GC，
- 严重的会进行```STW```
- >Java中Stop-The-World机制简称STW,是在执行垃圾收集算法时,Java应用程序的其他所有线程都被挂起(除了垃圾收集帮助器之外)。
- 
- 2、***数据一致性问题***，因为**CopyOnWrite**容器只能保证最终的数据一致性，并不能保证数据的实时性，也就是不具备原子性的效果。
- 
- 3、***数据修改***，随着数组的元素越来越多，修改的时候拷贝数组将会越来越耗时。
+
+缺点：
+
+1、***内存占用***，因为**写时复制**的原理，所以在添加新元素的时候会复制一份，此刻内存中就会有两份对象，比如这个时候有200M，你在复制一份400M，那么此刻会产生频繁的JVM的Yong GC和Full GC，
+严重的会进行```STW```
+
+>Java中Stop-The-World机制简称STW,是在执行垃圾收集算法时,Java应用程序的其他所有线程都被挂起(除了垃圾收集帮助器之外)。
+
+2、***数据一致性问题***，因为**CopyOnWrite**容器只能保证最终的数据一致性，并不能保证数据的实时性，也就是不具备原子性的效果。
+
+3、***数据修改***，随着数组的元素越来越多，修改的时候拷贝数组将会越来越耗时。
 
 优点：
 
@@ -241,6 +245,7 @@ Exception in thread "main" java.lang.UnsupportedOperationException
 2、Vector是比较古老的线程安全的，但性能不行
 
 3、CopyOnWriteArrayList在兼顾了线程安全的同时，又提高了并发性，性能比Vector要高
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200108163039300.jpg)
 
  
